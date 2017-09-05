@@ -1,0 +1,507 @@
+This shows my terminal data.
+
+Last login: Tue Sep  5 09:05:41 on ttys001
+MacBook-Pro:~ lacro_000$ brew install postgresql
+Updating Homebrew...
+==> Auto-updated Homebrew!
+Updated 2 taps (homebrew/core, homebrew/services).
+==> New Formulae
+docfx                      jupyter                    marathon-swift
+==> Updated Formulae
+abcmidi                                  libcds
+activemq                                 libcouchbase
+afl-fuzz                                 libjson-rpc-cpp
+agedu                                    libmagic
+alexjs                                   libmowgli
+amazon-ecs-cli                           libpng
+ansible-lint                             libpq
+apache-opennlp                           libqalculate
+apr                                      libtommath
+apr-util                                 libu2f-host
+armadillo                                libvirt
+atlassian-cli                            libzip
+ats2-postiats                            lldpd
+aws-sdk-cpp                              lz4
+aws-shell                                lzlib
+bash-completion                          m-cli
+bash-snippets                            macvim
+binaryen                                 mame
+blockhash                                mbedtls
+cargo-completion                         mdp
+carthage                                 mgba
+ccm                                      mikutter
+checkstyle                               mksh
+chipmunk                                 mmark
+chromedriver                             mutt
+citus                                    nestopia-ue
+conan                                    nnn
+consul-template                          nomad
+coreutils                                nvm
+couchdb                                  oniguruma
+crowdin                                  onscripter
+dar                                      openfortivpn
+dbhash                                   openmsx
+dcm2niix                                 paket
+dcos-cli                                 pango
+diff-pdf                                 pdf2htmlex
+diffoscope                               pdftoedn
+digdag                                   pdftoipe
+dlib                                     pgformatter
+dmd                                      pianobar
+dmtx-utils                               pngcrush
+docker                                   ponyc
+docker-completion                        poppler
+docker-compose                           postgresql
+docker-compose-completion                postgresql@9.4
+docker-credential-helper                 postgresql@9.5
+docker-swarm                             povray
+dub                                      pqiv
+duck                                     pre-commit
+duplicity                                pybind11
+dynamips                                 qemu
+e2fsprogs                                quantlib
+efl                                      rabbitmq
+entr                                     rancher-cli
+etcd                                     recon-ng
+exempi                                   redex
+exploitdb                                remake
+faas-cli                                 rhino
+fakeroot                                 rocksdb
+file-formula                             rom-tools
+firebase-cli                             rt-audio
+flow                                     rtags
+fluent-bit                               rtmidi
+fobis                                    ruby
+folly                                    ruby@2.2
+freeswitch                               ruby@2.3
+freetds                                  rust
+frugal                                   rustup-init
+fzf                                      s6
+gcsfuse                                  sbcl
+gd                                       selenium-server-standalone
+git-quick-stats                          sqldiff
+gitbucket                                sqlite
+glibmm                                   sqlite-analyzer
+glm                                      sqlmap
+gmime                                    strongswan
+gnupg                                    swiftformat
+gnuplot                                  swiftlint
+goocanvas                                sysdig
+goofys                                   tbox
+google-java-format                       tee-clc
+gource                                   teleport
+gpsbabel                                 terraform
+groonga                                  terragrunt
+grpc                                     thefuck
+grunt-completion                         tokei
+gsoap                                    tomcat@6
+gtk+3                                    trace2html
+heroku                                   translate-toolkit
+hicolor-icon-theme                       tsung
+hunspell                                 twarc
+icoutils                                 typescript
+imagemagick                              uhd
+imagemagick@6                            urh
+infer                                    vim
+influxdb                                 vips
+ipbt                                     vtk
+jenkins                                  wireshark
+jfrog-cli-go                             xctool
+jmxtrans                                 xrootd
+jsoncpp                                  xtensor
+knot                                     yaz
+kompose                                  youtube-dl
+kotlin                                   zabbix
+kube-aws                                 zanata-client
+kubernetes-cli                           zbar
+kubernetes-helm                          zsh-syntax-highlighting
+lean-cli
+==> Renamed Formulae
+srtp@1.5 -> srtp@1.6
+==> Deleted Formulae
+abi-compliance-checker                   team-explorer-everywhere
+
+==> Installing dependencies for postgresql: readline
+==> Installing postgresql dependency: readline
+==> Downloading https://homebrew.bintray.com/bottles/readline-7.0.3_1.sierra.bot
+######################################################################## 100.0%
+==> Pouring readline-7.0.3_1.sierra.bottle.tar.gz
+==> Caveats
+This formula is keg-only, which means it was not symlinked into /usr/local,
+because macOS provides the BSD libedit library, which shadows libreadline.
+In order to prevent conflicts when programs look for libreadline we are
+defaulting this GNU Readline installation to keg-only..
+
+For compilers to find this software you may need to set:
+    LDFLAGS:  -L/usr/local/opt/readline/lib
+    CPPFLAGS: -I/usr/local/opt/readline/include
+
+==> Summary
+🍺  /usr/local/Cellar/readline/7.0.3_1: 46 files, 1.5MB
+==> Installing postgresql
+==> Downloading https://homebrew.bintray.com/bottles/postgresql-9.6.5.sierra.bot
+######################################################################## 100.0%
+==> Pouring postgresql-9.6.5.sierra.bottle.tar.gz
+==> /usr/local/Cellar/postgresql/9.6.5/bin/initdb /usr/local/var/postgres
+==> Caveats
+If builds of PostgreSQL 9 are failing and you have version 8.x installed,
+you may need to remove the previous version first. See:
+  https://github.com/Homebrew/legacy-homebrew/issues/2510
+
+To migrate existing data from a previous major version (pre-9.0) of PostgreSQL, see:
+  https://www.postgresql.org/docs/9.6/static/upgrading.html
+
+To migrate existing data from a previous minor version (9.0-9.5) of PostgreSQL, see:
+  https://www.postgresql.org/docs/9.6/static/pgupgrade.html
+
+  You will need your previous PostgreSQL installation from brew to perform `pg_upgrade`.
+  Do not run `brew cleanup postgresql` until you have performed the migration.
+
+To have launchd start postgresql now and restart at login:
+  brew services start postgresql
+Or, if you don't want/need a background service you can just run:
+  pg_ctl -D /usr/local/var/postgres start
+==> Summary
+🍺  /usr/local/Cellar/postgresql/9.6.5: 3,269 files, 36.7MB
+MacBook-Pro:~ lacro_000$
+MacBook-Pro:~ lacro_000$ ls
+Applications	Downloads	Music		Sites
+Desktop		Library		OneDrive	Tracing
+Documents	Movies		Pictures	newfile.txt
+MacBook-Pro:~ lacro_000$ cd Documents/
+MacBook-Pro:Documents lacro_000$ ls
+DBQuery.shellBatchSize	Projects		students.json
+My Games		_Projects-Back-End
+Overwatch		primer-dataset.json
+MacBook-Pro:Documents lacro_000$ cd _Projects-Back-End/
+MacBook-Pro:_Projects-Back-End lacro_000$ ls
+Mongodb Template	Other Files		Week-8
+Mystery-Word		Week 5 Node		_Week-7
+NPM Template		Week 6
+MacBook-Pro:_Projects-Back-End lacro_000$ createdb my_test_db
+createdb: could not connect to database template1: could not connect to server: No such file or directory
+	Is the server running locally and accepting
+	connections on Unix domain socket "/tmp/.s.PGSQL.5432"?
+MacBook-Pro:_Projects-Back-End lacro_000$ brew services list
+Name       Status  User      Plist
+mongodb    started lacro_000 /Users/lacro_000/Library/LaunchAgents/homebrew.mxcl.mongodb.plist
+postgresql stopped
+MacBook-Pro:_Projects-Back-End lacro_000$ brew services start postgresql
+==> Successfully started `postgresql` (label: homebrew.mxcl.postgresql)
+MacBook-Pro:_Projects-Back-End lacro_000$ createdb my_test_db
+MacBook-Pro:_Projects-Back-End lacro_000$ brew services list
+Name       Status  User      Plist
+mongodb    started lacro_000 /Users/lacro_000/Library/LaunchAgents/homebrew.mxcl.mongodb.plist
+postgresql started lacro_000 /Users/lacro_000/Library/LaunchAgents/homebrew.mxcl.postgresql.plist
+MacBook-Pro:_Projects-Back-End lacro_000$ psql ;;list
+-bash: syntax error near unexpected token `;;'
+MacBook-Pro:_Projects-Back-End lacro_000$ psql --list
+                                    List of databases
+    Name    |   Owner   | Encoding |   Collate   |    Ctype    |    Access privileges
+------------+-----------+----------+-------------+-------------+-------------------------
+ my_test_db | lacro_000 | UTF8     | en_US.UTF-8 | en_US.UTF-8 |
+ postgres   | lacro_000 | UTF8     | en_US.UTF-8 | en_US.UTF-8 |
+ template0  | lacro_000 | UTF8     | en_US.UTF-8 | en_US.UTF-8 | =c/lacro_000           +
+            |           |          |             |             | lacro_000=CTc/lacro_000
+ template1  | lacro_000 | UTF8     | en_US.UTF-8 | en_US.UTF-8 | =c/lacro_000           +
+            |           |          |             |             | lacro_000=CTc/lacro_000
+(4 rows)
+
+MacBook-Pro:_Projects-Back-End lacro_000$ psql my_test_db
+psql (9.6.5)
+Type "help" for help.
+
+my_test_db=# CREATE TABLE students (
+my_test_db(#   id SERIAL PRIMARY KEY,
+my_test_db(#   name VARCHAR(100) NOT NULL,
+my_test_db(#   email VARCHAR(100) NULL UNIQUE,
+my_test_db(#   favorite_candy VARCHAR(100) NULL,
+my_test_db(#   graduated BOOLEAN NOT NULL DEFAULT 'f',
+my_test_db(#   cohort INTEGER NOT NULL
+my_test_db(# );
+CREATE TABLE
+my_test_db=#
+my_test_db=# select * from students;
+ id | name | email | favorite_candy | graduated | cohort
+----+------+-------+----------------+-----------+--------
+(0 rows)
+
+my_test_db=#
+my_test_db=#
+my_test_db=#
+my_test_db=#
+my_test_db=#
+my_test_db=#
+my_test_db=# INSERT INTO students (name, favorite_candy, graduated, cohort) VALUES ('Charlie', 'Skittles', 't', 1);
+INSERT 0 1
+my_test_db=# INSERT INTO students (name, email, cohort) VALUES ('Harper', 'harper@example.org', 12);
+INSERT 0 1
+my_test_db=# INSERT INTO students (name, favorite_candy, cohort) VALUES
+my_test_db-# ('Kelly', 'Milky Way', 12),
+my_test_db-# ('Alexis', 'Hot Tamales', 12);
+INSERT 0 2
+my_test_db=#
+my_test_db=# select * from students;
+ id |  name   |       email        | favorite_candy | graduated | cohort
+----+---------+--------------------+----------------+-----------+--------
+  1 | Charlie |                    | Skittles       | t         |      1
+  2 | Harper  | harper@example.org |                | f         |     12
+  3 | Kelly   |                    | Milky Way      | f         |     12
+  4 | Alexis  |                    | Hot Tamales    | f         |     12
+(4 rows)
+
+my_test_db=# select name from students where graduated = 'f'
+my_test_db-# select name form students were graduated = 't';
+ERROR:  syntax error at or near "select"
+LINE 2: select name form students were graduated = 't';
+        ^
+my_test_db=# select name from students where graduated = 'f';
+  name
+--------
+ Harper
+ Kelly
+ Alexis
+(3 rows)
+
+my_test_db=# select name from students where graduated = 'f';
+  name
+--------
+ Harper
+ Kelly
+ Alexis
+(3 rows)
+
+my_test_db=# select name from students where graduated = 't';
+  name
+---------
+ Charlie
+(1 row)
+
+my_test_db=# select name. graduated from students where favorite_candy is not null;
+ERROR:  missing FROM-clause entry for table "name"
+LINE 1: select name. graduated from students where favorite_candy is...
+               ^
+my_test_db=# select name. graduated from students where favorite_candy IS NOT NULL;
+ERROR:  missing FROM-clause entry for table "name"
+LINE 1: select name. graduated from students where favorite_candy IS...
+               ^
+my_test_db=# select name, graduated from students where favorite_candy IS NOT NULL;
+  name   | graduated
+---------+-----------
+ Charlie | t
+ Kelly   | f
+ Alexis  | f
+(3 rows)
+
+my_test_db=# CREATE TABLE users ( id SERIAL PRIMARY KEY, name VARCHAR(100) NOT NULL, email VARCHAR(100) NOT NULL UNIQUE, active BOOLEAN NOT NULL DEFAULT 't' );
+CREATE TABLE
+my_test_db=# \q
+MacBook-Pro:_Projects-Back-End lacro_000$
+MacBook-Pro:_Projects-Back-End lacro_000$ brew services start postgresql
+Service `postgresql` already started, use `brew services restart postgresql` to restart.
+MacBook-Pro:_Projects-Back-End lacro_000$ brew services restart postgresql
+Stopping `postgresql`... (might take a while)
+==> Successfully stopped `postgresql` (label: homebrew.mxcl.postgresql)
+==> Successfully started `postgresql` (label: homebrew.mxcl.postgresql)
+MacBook-Pro:_Projects-Back-End lacro_000$ createdb customers_db
+MacBook-Pro:_Projects-Back-End lacro_000$ psql --list
+                                     List of databases
+     Name     |   Owner   | Encoding |   Collate   |    Ctype    |    Access privileges
+--------------+-----------+----------+-------------+-------------+-------------------------
+ customers_db | lacro_000 | UTF8     | en_US.UTF-8 | en_US.UTF-8 |
+ my_test_db   | lacro_000 | UTF8     | en_US.UTF-8 | en_US.UTF-8 |
+ postgres     | lacro_000 | UTF8     | en_US.UTF-8 | en_US.UTF-8 |
+ template0    | lacro_000 | UTF8     | en_US.UTF-8 | en_US.UTF-8 | =c/lacro_000           +
+              |           |          |             |             | lacro_000=CTc/lacro_000
+ template1    | lacro_000 | UTF8     | en_US.UTF-8 | en_US.UTF-8 | =c/lacro_000           +
+              |           |          |             |             | lacro_000=CTc/lacro_000
+(5 rows)
+
+MacBook-Pro:_Projects-Back-End lacro_000$ psql customers_db
+psql (9.6.5)
+Type "help" for help.
+
+customers_db=#
+customers_db=#
+customers_db=# CREATE TABLE customers (
+customers_db(# id serial primary key,
+customers_db(# name varchar(100) not null,
+customers_db(# business varchar(100) null,
+customers_db(# tier integer not null default '1'
+customers_db(# );
+CREATE TABLE
+customers_db=#
+customers_db=#
+customers_db=# select * from customers
+customers_db-#
+customers_db-# ;
+ id | name | business | tier
+----+------+----------+------
+(0 rows)
+
+customers_db=# insert into customers (name, business) values (mark, book_store);
+ERROR:  column "mark" does not exist
+LINE 1: insert into customers (name, business) values (mark, book_st...
+                                                       ^
+customers_db=# insert into customers (name, business) values ('mark', 'bookstore');
+INSERT 0 1
+customers_db=# select * from customers
+;
+ id | name | business  | tier
+----+------+-----------+------
+  1 | mark | bookstore |    1
+(1 row)
+
+customers_db=# \q
+MacBook-Pro:_Projects-Back-End lacro_000$ brew services list
+Name       Status  User      Plist
+mongodb    started lacro_000 /Users/lacro_000/Library/LaunchAgents/homebrew.mxcl.mongodb.plist
+postgresql started lacro_000 /Users/lacro_000/Library/LaunchAgents/homebrew.mxcl.postgresql.plist
+MacBook-Pro:_Projects-Back-End lacro_000$ brew services restart postgresql
+Stopping `postgresql`... (might take a while)
+==> Successfully stopped `postgresql` (label: homebrew.mxcl.postgresql)
+==> Successfully started `postgresql` (label: homebrew.mxcl.postgresql)
+MacBook-Pro:_Projects-Back-End lacro_000$ psql --list
+                                     List of databases
+     Name     |   Owner   | Encoding |   Collate   |    Ctype    |    Access privileges
+--------------+-----------+----------+-------------+-------------+-------------------------
+ customers_db | lacro_000 | UTF8     | en_US.UTF-8 | en_US.UTF-8 |
+ my_test_db   | lacro_000 | UTF8     | en_US.UTF-8 | en_US.UTF-8 |
+ postgres     | lacro_000 | UTF8     | en_US.UTF-8 | en_US.UTF-8 |
+ template0    | lacro_000 | UTF8     | en_US.UTF-8 | en_US.UTF-8 | =c/lacro_000           +
+              |           |          |             |             | lacro_000=CTc/lacro_000
+ template1    | lacro_000 | UTF8     | en_US.UTF-8 | en_US.UTF-8 | =c/lacro_000           +
+              |           |          |             |             | lacro_000=CTc/lacro_000
+(5 rows)
+
+MacBook-Pro:_Projects-Back-End lacro_000$ psql todolist
+psql: FATAL:  database "todolist" does not exist
+MacBook-Pro:_Projects-Back-End lacro_000$ createdb todolist
+MacBook-Pro:_Projects-Back-End lacro_000$ psql --list
+                                     List of databases
+     Name     |   Owner   | Encoding |   Collate   |    Ctype    |    Access privileges
+--------------+-----------+----------+-------------+-------------+-------------------------
+ customers_db | lacro_000 | UTF8     | en_US.UTF-8 | en_US.UTF-8 |
+ my_test_db   | lacro_000 | UTF8     | en_US.UTF-8 | en_US.UTF-8 |
+ postgres     | lacro_000 | UTF8     | en_US.UTF-8 | en_US.UTF-8 |
+ template0    | lacro_000 | UTF8     | en_US.UTF-8 | en_US.UTF-8 | =c/lacro_000           +
+              |           |          |             |             | lacro_000=CTc/lacro_000
+ template1    | lacro_000 | UTF8     | en_US.UTF-8 | en_US.UTF-8 | =c/lacro_000           +
+              |           |          |             |             | lacro_000=CTc/lacro_000
+ todolist     | lacro_000 | UTF8     | en_US.UTF-8 | en_US.UTF-8 |
+(6 rows)
+
+MacBook-Pro:_Projects-Back-End lacro_000$ psql todolist
+psql (9.6.5)
+Type "help" for help.
+
+todolist=# create table todos (
+todolist(# id serial primary key,
+todolist(# title varchar(255) not null,
+todolist(# details varchar(100000) null,
+todolist(# priority integer not null default '1',
+todolist(# created_at timestamp not null,
+todolist(# completed_at timestamp null
+todolist(# );
+CREATE TABLE
+todolist=#
+todolist=# select * from todos;
+ id | title | details | priority | created_at | completed_at
+----+-------+---------+----------+------------+--------------
+(0 rows)
+
+todolist=# insert into todos (title, details, priority) values ('clean_home', 'needs extra time', 2);
+ERROR:  null value in column "created_at" violates not-null constraint
+DETAIL:  Failing row contains (1, clean_home, needs extra time, 2, null, null).
+todolist=# insert into todos (title, details, priority, created_at) values ('clean_home', 'needs extra time', 2, now());
+INSERT 0 1
+todolist=# select * from todos;
+ id |   title    |     details      | priority |         created_at         | completed_at
+----+------------+------------------+----------+----------------------------+--------------
+  2 | clean_home | needs extra time |        2 | 2017-09-05 11:33:04.819461 |
+(1 row)
+
+todolist=# insert into todos (title, details, priority, created_at) values ('laundry', '', 3, now());
+INSERT 0 1
+todolist=#
+todolist=# select * from todos;
+ id |   title    |     details      | priority |         created_at         | completed_at
+----+------------+------------------+----------+----------------------------+--------------
+  2 | clean_home | needs extra time |        2 | 2017-09-05 11:33:04.819461 |
+  3 | laundry    |                  |        3 | 2017-09-05 11:35:55.540117 |
+(2 rows)
+
+todolist=# insert into todos (title, created_at) values ('replace_paper_towels', now());
+INSERT 0 1
+todolist=# select * from todos;
+ id |        title         |     details      | priority |         created_at         | completed_at
+----+----------------------+------------------+----------+----------------------------+--------------
+  2 | clean_home           | needs extra time |        2 | 2017-09-05 11:33:04.819461 |
+  3 | laundry              |                  |        3 | 2017-09-05 11:35:55.540117 |
+  4 | replace_paper_towels |                  |        1 | 2017-09-05 11:36:08.776146 |
+(3 rows)
+
+todolist=# insert into todos (title, created_at, completed_at) values ('arrange_bookshelf', now(), now());
+INSERT 0 1
+todolist=# insert into todos (title, details, priority, created_at) values ('feed_pet', 'food in the closet', 2, now());
+INSERT 0 1
+todolist=# select * from todos;
+ id |        title         |      details       | priority |         created_at         |       completed_at
+----+----------------------+--------------------+----------+----------------------------+---------------------------
+  2 | clean_home           | needs extra time   |        2 | 2017-09-05 11:33:04.819461 |
+  3 | laundry              |                    |        3 | 2017-09-05 11:35:55.540117 |
+  4 | replace_paper_towels |                    |        1 | 2017-09-05 11:36:08.776146 |
+  5 | arrange_bookshelf    |                    |        1 | 2017-09-05 11:43:36.26046  | 2017-09-05 11:43:36.26046
+  6 | feed_pet             | food in the closet |        2 | 2017-09-05 11:43:42.816109 |
+(5 rows)
+
+todolist=# select title from todos where completed_at is null;
+        title
+----------------------
+ clean_home
+ laundry
+ replace_paper_towels
+ feed_pet
+(4 rows)
+
+todolist=# select title, details, priority from todos where priority > 1;
+   title    |      details       | priority
+------------+--------------------+----------
+ clean_home | needs extra time   |        2
+ laundry    |                    |        3
+ feed_pet   | food in the closet |        2
+(3 rows)
+
+todolist=#
+todolist=# update todos set completed_at = now() where id = 3;
+UPDATE 1
+todolist=# select * from todos;
+ id |        title         |      details       | priority |         created_at         |        completed_at
+----+----------------------+--------------------+----------+----------------------------+----------------------------
+  2 | clean_home           | needs extra time   |        2 | 2017-09-05 11:33:04.819461 |
+  4 | replace_paper_towels |                    |        1 | 2017-09-05 11:36:08.776146 |
+  5 | arrange_bookshelf    |                    |        1 | 2017-09-05 11:43:36.26046  | 2017-09-05 11:43:36.26046
+  6 | feed_pet             | food in the closet |        2 | 2017-09-05 11:43:42.816109 |
+  3 | laundry              |                    |        3 | 2017-09-05 11:35:55.540117 | 2017-09-05 11:46:08.976395
+(5 rows)
+
+todolist=# select title from todos where completed_at is null;
+        title
+----------------------
+ clean_home
+ replace_paper_towels
+ feed_pet
+(3 rows)
+
+todolist=# DELETE FROM todos WHERE completed_at IS NOT NULL;
+DELETE 2
+todolist=#
+todolist=# select * from todos;
+ id |        title         |      details       | priority |         created_at         | completed_at
+----+----------------------+--------------------+----------+----------------------------+--------------
+  2 | clean_home           | needs extra time   |        2 | 2017-09-05 11:33:04.819461 |
+  4 | replace_paper_towels |                    |        1 | 2017-09-05 11:36:08.776146 |
+  6 | feed_pet             | food in the closet |        2 | 2017-09-05 11:43:42.816109 |
+(3 rows)
+
+todolist=#
